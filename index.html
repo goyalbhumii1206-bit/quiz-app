@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- WRAPPER (title upar, box neeche) -->
+  <div style="display:flex; flex-direction:column; align-items:center;">
+
+    <!-- APP NAME -->
+    <h2 style="color:white; text-align:center; margin-bottom:15px;">
+      Quiz App
+    </h2>
+
+    <!-- QUIZ MAIN BOX -->
+    <div class="quiz-box">
+
+      <!-- START SCREEN -->
+      <div id="startScreen">
+        <h2>Welcome to Quiz App 🎯</h2>
+        <p>Test your basic web development knowledge</p>
+        <button id="startBtn">Start Quiz</button>
+      </div>
+
+      <!-- QUIZ SCREEN -->
+      <div id="quizScreen" style="display:none;">
+        <h2 id="question">Question</h2>
+
+        <div class="options">
+          <button class="option"></button>
+          <button class="option"></button>
+          <button class="option"></button>
+          <button class="option"></button>
+        </div>
+
+        <button id="nextBtn">Next</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS FILE -->
+  <script src="script.js"></script>
+
+</body>
+</html>
